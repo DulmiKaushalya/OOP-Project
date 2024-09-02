@@ -1,0 +1,123 @@
+@charset "ISO-8859-1";
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Comme:wght@100&family=Poppins:wght@100;400;500;600;700;800;900&family=Raleway:wght@100&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto' , sans-serif;
+    text-decoration: none;
+    list-style: none;
+    
+    scroll-padding-top: 1rem;
+    scroll-behavior: smooth;
+}
+/*When selecting by the mouse clour changing*/
+::selection {
+    background: #ff8400;
+    color: #ffffff;
+}
+section {
+    padding: 50px 100px;
+}
+header {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    background: #feb03b;
+  }
+  
+  .logoText {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+    font-weight: 600;
+    font-size: 50px;
+    margin: 0;
+    color: #ffffff;
+  }
+  
+  nav {
+    background-color: #ffcf76;
+  }
+
+  .navigationBar a {
+    font-size: 1.1em;
+    color: #fff;
+  }
+
+  .navigationBar a:after {
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+  }
+  
+  .navigationBar :hover {
+    transform-origin: left;
+    transform: scaleX(1);
+    transition: transform .5s;
+    background-color: #fe9c3b;
+  }
+
+  .navigationBar {
+    list-style-type: none;
+    padding: 15px;
+    margin: 0;
+    justify-content:center;
+    display: flex;
+  }
+  
+  .navigationBar li {
+    margin-right: 20px;
+  }
+  
+  .navigationBar li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+  }
+  
+  .logos img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  .helpButton {
+    position: absolute;
+    background-color: #ffbb00;
+    right: 3%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.8em;
+    color: #000000;
+    font-weight: 500;
+    transition: .5s;
+    border: none;
+  }
+  
+
+
+
+.sign , .log {
+    padding: 10px 20px;
+    background: #3b52fe;
+    border-radius: 30px;
+    font-weight: 500;
+    color: #fff;
+    float: right;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: none;
+}
+.sign:hover , .log:hover {
+    transform: scale(1.1);
+}
